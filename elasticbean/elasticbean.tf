@@ -20,4 +20,14 @@ resource "aws_elastic_beanstalk_environment" "testdev" {
     name = "Subnets"
     value = var.subnet_id
   }
+  setting {
+    namespace = "aws:autoscaling:launchconfiguration"
+    name = "InstanceType"
+    value = "t2.micro"
+  }
+  setting {
+    namespace = "aws:autoscaling:launchconfiguration"
+    name = "IamInstanceProfile"
+    value = "aws-elasticbeanstalk-ec2-role"
+  }
 }
