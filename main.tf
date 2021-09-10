@@ -13,3 +13,11 @@ provider "aws" {
 module "Network" {
   source = "./Network"
 }
+
+module "ElasticBean" {
+  source = "./elasticbean"
+  vpc_id = module.Network.vpc_id
+  subnet_id = module.Network.public_subnet_id
+}
+
+
