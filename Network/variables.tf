@@ -1,5 +1,5 @@
 variable "vpc_cdir" {
-  type = string
+  type = map(string)
   default = {
     web = "172.27.0.0/16"
   }
