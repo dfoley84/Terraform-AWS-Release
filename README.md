@@ -1,2 +1,1 @@
-![example branch parameter](https://github.com/github/docs/actions/workflows/terraform.yml/badge.svg?branch=feature-1)
-
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/dfoley84/Terraform-AWS-Release/Terraform) ![GitHub last commit](https://img.shields.io/github/last-commit/dfoley84/Terraform-AWS-Release?style=flat-square) 
